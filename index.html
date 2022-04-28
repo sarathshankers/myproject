@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/ba184ec17a.js" crossorigin="anonymous"></script>
+
+    <!-- internal css for carousal images -->
+    <style>
+        #a2 {
+            height: 600px;
+        }
+    </style>
+  
+
+
+</head>
+
+
+<body>
+    <!-- Navbar creation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid border border-light ms-5 me-5 ">
+            <a class="navbar-brand" href="#"><img id="a1" src="./pics/th.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black fs-4" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fs-4" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fs-4" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black fs-4" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-black fs-4" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Outlets
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"></a>Thiruvanathapuram</li>
+                            <li><a class="dropdown-item" href="#"></a>Kottayam</li>
+                            <li><a class="dropdown-item" href="#"></a>Kochi</li>
+                            <li><a class="dropdown-item" href="#"></a>Kozhikode</li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Find location</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-danger fs-5" type="submit">Sign/Login</button>
+                    
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-3">
+
+        <p class="text-center text-danger bg-dark fs-5"> <i class="fa-solid fa-location-dot"></i> Start an Order For
+            Pickup or Delivery</p>
+    </div>
+
+
+    <!-- carousal creation -->
+
+    <div class="container-fluid bg-light ">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img id="a2" src="./pics/Hot-Wings-Bucket.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-dark">KFC</h1>
+                        <p class="text-dark fs-3">JACK HARLOW'S KENTUCKY FRIED FAVORITES</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img id="a2" src="./pics/kfc.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-dark">BOOK YOUR SEAT</h1>
+                        <p class="text-dark fs-3">Now online order is much faster</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img id="a2" src="./pics/l-intro-1607437705.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-dark">TRY YOUR FAVORITE FOOD</h1>
+                        <p class="text-dark fs-3">We focus for the coustmer satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- simple container -->
+    <div class="container-fluid mt-3 bg-danger text-center pt-3">
+        <h4>FINGER LICKIN' GOOD® IS NOW JUST A FEW CLICKS AWAY <button class="btn btn-dark text-danger">ORDER
+                NOW</button></h4>
+    </div>
+
+    <!-- position coloums with images -->
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6"><img class="w-100" src="./pics/1.png" alt="" style="height: 500px;"></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 "> <img class=" w-100" src="./pics/2.jpg" alt="" style="height: 500px;"></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 "> <img class=" w-100" src="./pics/5.png" alt="" style="height: 500px;"></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 "> <img class=" w-100" src="./pics/3.jpg" alt="" style="height: 500px;"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-5 col-sm-6  "><h1 class="text-dark ps-5 pe-5 pt-5 ms-5 me-5 text-center " style="height: 100px;"> UNLOCK MORE FINGER LICKIN' GOOD BENEFITS</h1>
+        <button class=" container btn btn-success ms-5">Sign me up!</button>
+        <h1 class="text-center text-dark bg-light mt-5 mb-3">Regionalized Menus</h1>
+         <div class="container-fluid ms-5 text-danger p-5">
+            <h4>*Hot wings and fries served in paper buckets</h4>
+            <h4>*Hot and spicy chicken, colonel rice, coleslaw and nuggets in Malaysia</h4>
+            <h4>*KFC shrimp burger sold in Vietnam</h4>
+           <h4>*Hot wings menu set sold in Berlin</h4>
+           <h4>*KFC Dragon Twister, a chicken and duck sauce wrap sold in China</h4>
+
+         </div>
+
+        </div>
+        <div class="col-lg-6 col-md-5 col-sm-6  "><img class="w-100" src="./pics/4.png" alt="" style="height: 500px;"></div>
+    </div>
+
+
+<div class="container-fluid text-center text-black bg-danger pt-5">
+    <h5>OUR FOOD</h5>
+    <h1 class="fs-1 mt-5 mb-5">WE MAKE IT THE HARD WAY</h1>
+    <p class="fs-3"> See what goes into making our world famous fried chicken</p>
+    <button class="btn btn-primary btn-lg mb-5">LEARN MORE</button>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-3 col-md-4 col=sm-6"><img src="./pics/6.jpeg" alt=""></div>
+    <div class="col-lg-3 col-md-4 col=sm-6"><img src="./pics/8.jpeg" alt=""></div>
+    <div class="col-lg-3 col-md-4 col=sm-6"><img src="./pics/9.jpeg" alt=""></div> 
+    <div class="col-lg-3 col-md-4 col=sm-6"><img src="./pics/10.jpeg" alt=""></div> 
+</div>
+
+
+<div class="container bg-light text-center ps-5 pe-5 mb-3 mt-3">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark text-danger mt-5 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Feedback
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"> 
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Kindly reach us...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <form action="a1"> share your feedback</form>
+          <input type="text" id="a1">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid bg-black p-5">
+    <p class="text-center text-white">Privacy      Policy       
+        Updated 01/2022Terms of Use
+        Our Cookies and Ads
+        Do Not Sell My Personal Information
+        Accessibility Statement
+        Copyright © KFC Corporation 2022 All Rights Reserved
+        Build: KFC04202022:d74c50a7 </p>
+        <div class="container-fluid  bg-info text-center">
+            <i class=" p-5 fs-1 fa-brands fa-facebook"></i>
+            <i class=" p-5 fs-1 fa-brands fa-twitter"></i>
+            <i class="p-5 fs-1 fa-brands fa-instagram"></i>
+        </div>
+</div>
+
+
+
+
+</body>
+
+</html>
